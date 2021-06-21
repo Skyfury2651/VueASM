@@ -2,12 +2,12 @@
   <div class="form">
     <form>
       <label>
-        <input id="fname" type="text" placeholder="Name">
+        <input id="fname" type="text" placeholder="username">
         <span>Name</span>
       </label>
 
       <label>
-        <input type="email" placeholder="Email">
+        <input type="password" placeholder="password">
         <span>Email</span>
       </label>
 
@@ -18,7 +18,20 @@
 
 <script>
 export default {
-  name: "Form"
+  name: "Login",
+  data(){
+    return {
+       credential: {
+         userName: '',
+         password: ''
+       }
+    }
+  },
+  methods: {
+    login(){
+
+    }
+  }
 }
 </script>
 
